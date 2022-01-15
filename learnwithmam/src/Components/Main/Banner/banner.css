@@ -1,0 +1,138 @@
+h1,h2,h3,a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+.banner {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.left-side,
+.right-side {
+    width: 50%;
+    display: block;
+}
+.left-side img {
+    height: 300px;
+}
+.left-side .banner_text span.right:nth-child(1) {
+    animation: makeColor1;
+    animation-duration: 3s;
+}
+.left-side .banner_text span.right:nth-child(2) {
+    animation: makeColor2;
+    animation-duration: 3s;
+}
+.left-side .banner_text span.right:nth-child(3) {
+    animation: makeColor3;
+    animation-duration: 3s;
+}
+.left-side .banner_text span.right:nth-child(1) {
+    color: red;
+}
+.left-side .banner_text span.right:nth-child(2) {
+    color: #fff;
+}
+.left-side .banner_text span.right:nth-child(3) {
+    color: #0066ff;
+}
+.left-side .introd {
+    display: flex;
+    align-items: center;
+}
+
+.left-side .introd .cloud-text {
+    background-color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 80px;
+    text-align: justify;
+    width: 300px;
+    animation: Look 5s ease-in;
+}
+.right-side {
+    text-align: center;
+}
+.right-side img {
+    width: 400px;
+    position: relative;
+}
+.right-side img.left {
+    animation-name: moveLeft;
+    animation-duration: 3s;
+    animation-direction: normal;
+}
+
+@keyframes makeColor1 {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: red;
+    }
+}
+@keyframes makeColor2 {
+    0%{
+        color: #3333;
+    }
+    100%{
+        color: #fff;
+    }
+}
+@keyframes makeColor3 {
+    0%{
+        color: #fff;
+    }
+    100%{
+        color: #0066ff;
+    }
+}
+@keyframes moveLeft {
+    0%{
+        right: 100%;
+        display: initial;
+        opacity: 0.3;
+    }
+    100%{
+        right: 0%;
+        display: initial;
+    }
+    
+}
+@keyframes moveTop {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 5%;
+    }
+}
+
+@keyframes Look {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 760px)
+{
+    .banner {
+        padding: 15px 25px;
+        display: block;
+        width: 100vw;
+        
+    }
+    .left-side{
+        display: none;
+    }
+    .right-side img {
+        width: 350px;
+    }
+}
