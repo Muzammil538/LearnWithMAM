@@ -1,0 +1,188 @@
+.ft-container {
+  padding: 15px 30px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ft-links,
+.ft-social,
+.ft-services,
+.ft-about {
+  display: flex;
+  padding: 10px 20px;
+  flex-direction: column;
+}
+.ft-links .uns1,
+.ft-social .uns2,
+.ft-services .uns3,
+.ft-about .uns4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ft-links .uns1 a,
+.ft-social .uns2 a,
+.ft-services .uns3 a,
+.ft-about .uns4 a {
+  margin: 5px 0px;
+}
+a span {
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0px 5px;
+  transition-delay: 2s;
+}
+a span.blinker {
+    animation: blink 2s infinite ease-in-out;
+}
+form {
+    padding: 10px 15px;
+    text-align: center;
+}
+form h2 {
+    text-align: center;
+    padding: 5px 0px 10px 0px;
+}
+.form-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px 20px 5px;
+}
+.input-box {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-box label , .text-box label{
+    color: #fff;
+    padding: 0px 7px;
+}
+.input-box input {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 5px;
+    width: 230px;
+    box-shadow: 5px 15px 15px -10px;
+}
+.text-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.text-box textarea {
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 3px 7px;
+    max-height: 300px;
+    height: 150px;
+    width: 250px;
+    resize: none;
+    box-shadow: 5px 15px 15px -10px;
+}
+form button {
+    text-align: center;
+    background-color: #0066ff;
+    border: none;
+    outline: none;
+    padding: 5px 7px;
+    color: #fff;
+    border-radius: 7px;
+    width: 200px;
+    cursor: pointer;
+}
+.ft-label {
+    background-color: #686868;
+    padding: 5px 7px;
+    text-align: center;
+}
+.ft-label p {
+    color: #f0f0f0;
+    text-align: center;
+}
+
+/* Mobile View */
+@media screen and (max-width: 760px){
+  .ft-container {
+    padding: 7px 15px;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .ft-links .uns1,
+  .ft-social .uns2,
+  .ft-services .uns3,
+  .ft-about .uns4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ft-links .uns1 a,
+  .ft-social .uns2 a,
+  .ft-services .uns3 a,
+  .ft-about .uns4 a {
+    margin: 5px;
+  }
+  .ft-links a i,
+  .ft-social a i,
+  .ft-services a i,
+  .ft-about a i {
+    margin: 0px 5px;
+  }
+  form {
+    padding: 5px 8px;
+    margin: 10px 0px;
+  }
+  .form-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .input-box {
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+  .input-box label , .text-box label {
+    padding: 7px 0px;
+  }
+  .input-box input {
+    width: 80vw;
+  }
+  .text-box {
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .text-box textarea {
+    width: 80vw;
+  }
+  form button {
+    width: 80vw;
+    padding: 7px 5px;
+  }
+}
+/* This is the neon text style */
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+@keyframes blink {
+  0% {
+    color: #fff;
+    background-color: red;
+  }
+  100% {
+    color: red;
+    background-color: #333;
+  }
+}

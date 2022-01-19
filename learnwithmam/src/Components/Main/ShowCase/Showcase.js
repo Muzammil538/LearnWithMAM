@@ -45,7 +45,7 @@ export default function Showcase() {
         </div>
         <div className="card">
           <div className="card-Img">
-            <i class="fas fa-code"></i>
+          <i class="fas fa-gamepad"></i>
           </div>
           <div className="card-content">
             <div className="card-title">
@@ -67,7 +67,7 @@ export default function Showcase() {
         </div>
         <div className="card">
           <div className="card-Img">
-            <i class="fas fa-code"></i>
+          <i class="fas fa-map-marked-alt"></i>
           </div>
           <div className="card-content">
             <div className="card-title">

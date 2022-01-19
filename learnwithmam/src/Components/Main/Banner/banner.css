@@ -71,7 +71,7 @@ h1,h2,h3,a {
         color: #fff;
     }
     100%{
-        color: red;
+        color: red !important;
     }
 }
 @keyframes makeColor2 {
@@ -79,7 +79,7 @@ h1,h2,h3,a {
         color: #3333;
     }
     100%{
-        color: #fff;
+        color: #fff !important;
     }
 }
 @keyframes makeColor3 {
@@ -87,7 +87,7 @@ h1,h2,h3,a {
         color: #fff;
     }
     100%{
-        color: #0066ff;
+        color: #0066ff !important;
     }
 }
 @keyframes moveLeft {
