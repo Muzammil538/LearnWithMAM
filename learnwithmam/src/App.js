@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './Components/Navbar/navbar';
 import Main from './Components/Main/Main';
-
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Main/>
+      <Footer/>
     </>
   );
 }

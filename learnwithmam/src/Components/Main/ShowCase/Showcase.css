@@ -46,7 +46,7 @@ p {
 .card-content .card-body {
     padding: 5px 2px;
 }
-.card-content .card-btn {
+.card-content .card-btn , .card-btn{
     padding: 5px 0px;
 }
 .card-content .card-btn button ,.card-btn button{
