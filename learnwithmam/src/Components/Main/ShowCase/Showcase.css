@@ -5,9 +5,11 @@ p {
 .heading {
     padding: 5px 15px;
     text-align: center;
+    margin-bottom: 35px;
 }
 .heading h2 code {
     color: rgba(0,134,255,3);
+    cursor: pointer;
 }
 .container {
     padding: 20px 30px;
@@ -16,13 +18,39 @@ p {
     align-items: center;
     margin: 15px 0px;
 }
-
+.showcase {
+    height: 90vh;
+    position: relative;
+}
+.showcase .card:nth-child(1), 
+.card:nth-child(2), 
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5){
+    position: absolute;
+}
+.showcase .card:nth-child(1){
+    top: 0;
+    left: 0;
+}
+.showcase .card:nth-child(3){
+    right: 0;
+    bottom: 0;
+}
+.showcase .card:nth-child(4){
+    left: 0;
+    bottom: 0;
+}
+.showcase .card:nth-child(5){
+    top: 0;
+    right: 0;
+}
 .card {
     display: block;
     padding: 10px 15px;
     box-shadow: 0px 0px 15px -5px #f0f0f0;
     margin: 0px 15px;
-    width: 35%;
+    width: 30%;
 }
 .card .card-Img {
     padding: 10px;

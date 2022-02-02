@@ -9,6 +9,7 @@ h1,h2,h3,a {
     align-items: center;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 .left-side,
 .right-side {
