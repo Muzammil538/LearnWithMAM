@@ -6,6 +6,8 @@ p {
     padding: 5px 15px;
     text-align: center;
     margin-bottom: 35px;
+    height: 21vh;
+    border-bottom: 1px solid rgba(0,134,255,3);
 }
 .heading h2 code {
     color: rgba(0,134,255,3);
@@ -21,6 +23,7 @@ p {
 .showcase {
     height: 90vh;
     position: relative;
+    border-bottom: 1px solid rgba(0,134,255,3);
 }
 .showcase .card:nth-child(1), 
 .card:nth-child(2), 
@@ -112,10 +115,24 @@ p {
         justify-content: center;
         align-items: center;
     }
+    .showcase{
+        height: initial;
+    }
+    .showcase .card:nth-child(1), 
+    .card:nth-child(2), 
+    .card:nth-child(3),
+    .card:nth-child(4),
+    .card:nth-child(5){
+        position: initial;
+    }
+    .card:nth-child(4),
+    .card:nth-child(5) {
+        display: none;
+    }
     .card {
         padding: 10px;
         margin: 15px 0px;
-        width: 75%;
+        width: 80%;
         display: block;
         text-align: center;
     }

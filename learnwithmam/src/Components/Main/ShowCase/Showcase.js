@@ -1,4 +1,4 @@
-import React, { createElement } from "react";
+import React from "react";
 import "./Showcase.css";
 
 export default function Showcase() {
@@ -90,11 +90,11 @@ export default function Showcase() {
         </div>
         <div className="card">
           <div className="card-Img">
-          <i class="fas fa-map-marked-alt"></i>
+          <i class="fas fa-user-secret"></i>
           </div>
           <div className="card-content">
             <div className="card-title">
-              <h3>Ttile</h3>
+              <h3>Ethical Hacking</h3>
             </div>
             <div className="card-body">
               <p>
