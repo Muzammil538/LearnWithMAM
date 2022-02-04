@@ -4,4 +4,41 @@
 }
 .cr-wrapper {
     display: flex;
+    padding: 10px 5px;
+    justify-content: space-between;
+}
+.cr-card {
+    display: flex;
+    padding: 5px 15px;
+    box-shadow: 0 5px 15px 0px #fff;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+}
+.cr-card .cr-card-img {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.cr-card .cr-card-img i {
+    color: #fff;
+    font-size: 50px;
+}
+.cr-card .cr-card-body {
+    padding: 10px 5px;
+}
+.cr-card .cr-card-body h2, p {
+    padding: 5px;
+}
+.cr-card .cr-card-btn {
+    padding: 10px;
+    text-align: center;
+}
+.cr-card .cr-card-btn button {
+    background-color: #0066ff;
+    border: none;
+    outline: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
 }
