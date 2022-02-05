@@ -1,6 +1,7 @@
 import React from 'react';
 import './Courses.css';
 
+
 export default function Courses() {
   const cr_Head = {
     title: "Courses We Provide",
@@ -10,14 +11,26 @@ export default function Courses() {
     Web : {
       cr_react : {
         title : "React Dev",
-        img : "fas fa-laptop-code",
+        img : "fab fa-react",
         text : "This is a React Development course"
+      },
+      Bootstrap:{
+        title : "Bootstrap",
+        img : "fab fa-bootstrap",
+        text : "This is a Bootstrap course"
+      },
+      DataBase : {
+        title : "Database ",
+        img : "fas fa-server",
+        text : "This is a Database Manaagement course"
       }
     },
     Eth_Hack : {
-      title: "Penitration Testing",
-      img: "fas fa-laptop-code",
-      text: "This is an Ethical Hacking course"
+      PenTest: {
+        title: "Penitration Testing",
+        img: "fas fa-syringe",
+        text: "This is an Ethical Hacking course"
+      }
     },
 
   }
@@ -46,11 +59,11 @@ export default function Courses() {
                 {/* Penitration Testing */}
                 <div className="cr-card">
                   <div className="cr-card-img">
-                    <i className={cr_Card.Web.cr_react.img}></i>
+                    <i className={cr_Card.Eth_Hack.PenTest.img}></i>
                   </div>
                   <div className="cr-card-body">
-                    <h2>{cr_Card.Web.cr_react.title}</h2>
-                    <p>{cr_Card.Web.cr_react.text}</p>
+                    <h2>{cr_Card.Eth_Hack.PenTest.title}</h2>
+                    <p>{cr_Card.Eth_Hack.PenTest.text}</p>
                   </div>
                   <div className="cr-card-btn">
                     <button>
@@ -58,14 +71,14 @@ export default function Courses() {
                     </button>
                   </div>
                 </div>
-                {/* Card-3 */}
+                {/* Bootstrap */}
                 <div className="cr-card">
                   <div className="cr-card-img">
-                    <i className={cr_Card.Web.cr_react.img}></i>
+                    <i className={cr_Card.Web.Bootstrap.img}></i>
                   </div>
                   <div className="cr-card-body">
-                    <h2>{cr_Card.Web.cr_react.title}</h2>
-                    <p>{cr_Card.Web.cr_react.text}</p>
+                    <h2>{cr_Card.Web.Bootstrap.title}</h2>
+                    <p>{cr_Card.Web.Bootstrap.text}</p>
                   </div>
                   <div className="cr-card-btn">
                     <button>
@@ -79,11 +92,11 @@ export default function Courses() {
                 {/* Card-4 */}
                 <div className="cr-card">
                   <div className="cr-card-img">
-                    <i className={cr_Card.Web.cr_react.img}></i>
+                    <i className={cr_Card.Web.DataBase.img}></i>
                   </div>
                   <div className="cr-card-body">
-                    <h2>{cr_Card.Web.cr_react.title}</h2>
-                    <p>{cr_Card.Web.cr_react.text}</p>
+                    <h2>{cr_Card.Web.DataBase.title}</h2>
+                    <p>{cr_Card.Web.DataBase.text}</p>
                   </div>
                   <div className="cr-card-btn">
                     <button>
